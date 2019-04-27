@@ -1,0 +1,6 @@
+framework module Pods_freespacewidgetUITests {
+  umbrella header "Pods-freespacewidgetUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_freespacewidget {
+  umbrella header "Pods-freespacewidget-umbrella.h"
+
+  export *
+  module * { export * }
+}

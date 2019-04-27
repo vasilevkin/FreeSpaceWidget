@@ -1,0 +1,42 @@
+use_frameworks!
+inhibit_all_warnings!
+
+workspace 'freespacewidget'
+
+def useSwiftLint
+  pod 'SwiftLint'
+  
+  script_phase :name => 'Swift Lint Check',
+  :script => '"${PODS_ROOT}/SwiftLint/swiftlint"',
+  :execution_position => :before_compile
+end
+
+def commonPods
+    pod 'RxSwift',    '~> 4.0'
+    pod 'RxCocoa',    '~> 4.0'
+    pod 'SwiftLint'
+end
+
+
+target 'freespacewidget' do
+    platform :ios, '11.0'
+    project 'freespacewidget'
+
+    useSwiftLint
+
+    # Pods for freespacewidget
+    commonPods
+
+    target 'freespacewidgetTests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+end
+
+target 'freespacewidgetUITests' do
+    platform :ios, '11.0'
+    project 'freespacewidget'
+
+    inherit! :search_paths
+    # Pods for testing
+end
