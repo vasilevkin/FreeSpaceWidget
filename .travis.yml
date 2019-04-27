@@ -1,0 +1,5 @@
+language:
+  - swift
+osx_image: xcode10.2
+script:
+  - xcodebuild -workspace FreeSpaceWidget/freespacewidget.xcworkspace -scheme freespacewidget -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X,OS=12.2' build test | xcpretty -c -t; test ${PIPESTATUS[0]} -eq 0
