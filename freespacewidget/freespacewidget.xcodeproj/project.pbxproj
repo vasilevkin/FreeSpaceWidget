@@ -15,6 +15,9 @@
 		869C264C22746F1E0006CEFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 869C264A22746F1E0006CEFF /* LaunchScreen.storyboard */; };
 		869C265722746F1E0006CEFF /* freespacewidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869C265622746F1E0006CEFF /* freespacewidgetTests.swift */; };
 		869C266222746F1E0006CEFF /* freespacewidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869C266122746F1E0006CEFF /* freespacewidgetUITests.swift */; };
+		86E36C962275C0880025DCE9 /* CapacityMainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E36C952275C0880025DCE9 /* CapacityMainModel.swift */; };
+		86E36C982275C0E90025DCE9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E36C972275C0E90025DCE9 /* Constants.swift */; };
+		86E36C9A2275C1400025DCE9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E36C992275C1400025DCE9 /* ViewModel.swift */; };
 		958EC31A67FEC289F9CE4BBF /* Pods_freespacewidgetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9848DB82F011D7F937C3B01 /* Pods_freespacewidgetTests.framework */; };
 		9E56A7BCD74305D4333C7467 /* Pods_freespacewidgetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD74A9A2837AE0520EB307B /* Pods_freespacewidgetUITests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +58,9 @@
 		869C265D22746F1E0006CEFF /* freespacewidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freespacewidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		869C266122746F1E0006CEFF /* freespacewidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = freespacewidgetUITests.swift; sourceTree = "<group>"; };
 		869C266322746F1E0006CEFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86E36C952275C0880025DCE9 /* CapacityMainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CapacityMainModel.swift; path = Models/CapacityMainModel.swift; sourceTree = "<group>"; };
+		86E36C972275C0E90025DCE9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		86E36C992275C1400025DCE9 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C0A68F2DB0D826D12CDB2674 /* Pods-freespacewidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-freespacewidget.release.xcconfig"; path = "Target Support Files/Pods-freespacewidget/Pods-freespacewidget.release.xcconfig"; sourceTree = "<group>"; };
 		D9848DB82F011D7F937C3B01 /* Pods_freespacewidgetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_freespacewidgetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD74A9A2837AE0520EB307B /* Pods_freespacewidgetUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_freespacewidgetUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +146,9 @@
 			children = (
 				869C264122746F1C0006CEFF /* AppDelegate.swift */,
 				869C264322746F1C0006CEFF /* ViewController.swift */,
+				86E36C952275C0880025DCE9 /* CapacityMainModel.swift */,
+				86E36C972275C0E90025DCE9 /* Constants.swift */,
+				86E36C992275C1400025DCE9 /* ViewModel.swift */,
 				869C264522746F1C0006CEFF /* Main.storyboard */,
 				869C264822746F1E0006CEFF /* Assets.xcassets */,
 				869C264A22746F1E0006CEFF /* LaunchScreen.storyboard */,
@@ -414,8 +423,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E36C9A2275C1400025DCE9 /* ViewModel.swift in Sources */,
 				869C264422746F1C0006CEFF /* ViewController.swift in Sources */,
+				86E36C962275C0880025DCE9 /* CapacityMainModel.swift in Sources */,
 				869C264222746F1C0006CEFF /* AppDelegate.swift in Sources */,
+				86E36C982275C0E90025DCE9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
