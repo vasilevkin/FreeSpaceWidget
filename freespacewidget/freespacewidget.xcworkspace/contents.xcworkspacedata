@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../FreeSpaceWidgetCore/FreeSpaceWidgetCore.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:freespacewidget.xcodeproj">
    </FileRef>
    <FileRef
